@@ -22,11 +22,13 @@ button {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    border-radius: 3px;
 }
 
 button:hover{
     background-color: #102f5e;
     color: #fff;
+    border-radius: 10px;
 }
 
 button:hover > i {
@@ -40,8 +42,19 @@ button i{
 }
 
 input,
-select {
+select{
+    border: 2px solid white;
+    color: #102f5e;
+    border-radius: 3px;
+    transition: 0.4s;
     padding: 0.25rem 0.5rem;
+    outline: none;
+}
+
+input:focus,
+select:focus{
+    border: 2px solid #102f5e;
+    border-radius: 7px;
 }
 
 .hide {
@@ -54,7 +67,8 @@ select {
     max-width: 450px;
     margin: 3rem auto;
     background-color: #fdfdfdcc;
-    box-shadow: 1px 1px 10px 1px #fdfdfd9d;
+    box-shadow: 1px 1px 15px 1px #fdfdfd9d;
+    border: 2px solid #102f5e91;
     padding: 1.5rem;
     border-radius: 15px;
 }
@@ -140,6 +154,7 @@ select {
     padding: 1rem;
     border-bottom: 1px solid #102f5e;
     transition: 0.3s;
+    margin-bottom: 0.1rem;
 }
 
 .todo h3{
